@@ -32,7 +32,10 @@ const useData = <T>(
         setLoading(false);
       });
 
-    return () => controller.abort();
+    return () => {
+      controller.abort();
+      setError("");
+    };
   }, [...deps]);
 
   return { data, error, isLoading };
