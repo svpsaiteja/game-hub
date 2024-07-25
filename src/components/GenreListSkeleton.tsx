@@ -14,7 +14,7 @@ const GenreListSkeleton = () => {
         <ListItem key={s} paddingY={"5px"}>
           <HStack>
             <Skeleton width={"32px"} height={"32px"} borderRadius={"8px"} />
-            <SkeletonText flex={1} noOfLines={1} />
+            <SkeletonText flex={1} noOfLines={2} />
           </HStack>
         </ListItem>
       ))}
